@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <$mt:Include module="module_head"$>
+    </head>
+    <body>
+        <$mt:Include module="module_body"$>
+
+        <mt:If tag="CustomFieldValue" identifier="layout_header" eq="居宅介護支援">
+        　　　　<$mt:Include module="module_header_services_居宅介護支援"$>
+        <mt:ElseIf tag="CustomFieldValue" identifier="layout_header" eq="通所介護">
+        　　　　<$mt:Include module="module_header_services_通所介護"$>
+        <mt:ElseIf tag="CustomFieldValue" identifier="layout_header" eq="通所リハ">
+        　　　　<$mt:Include module="module_header_services_通所リハ"$>
+        <mt:ElseIf tag="CustomFieldValue" identifier="layout_header" eq="訪問介護">
+        　　　　<$mt:Include module="module_header_services_訪問介護"$>
+        <mt:ElseIf tag="CustomFieldValue" identifier="layout_header" eq="児発・放デイ">
+        　　　　<$mt:Include module="module_header_services_児発・放デイ"$>
+        <mt:ElseIf tag="CustomFieldValue" identifier="layout_header" eq="サ高住・有料老人ホーム">
+        　　　　<$mt:Include module="module_header_services_サ高住・有料老人ホーム"$>
+        <mt:ElseIf tag="CustomFieldValue" identifier="layout_header" eq="福祉用具貸与">
+        　　　　<$mt:Include module="module_header_services_福祉用具貸与"$>
+        <mt:ElseIf tag="CustomFieldValue" identifier="layout_header" eq="福祉用具販売">
+        　　　　<$mt:Include module="module_header_services_福祉用具販売"$>
+        <mt:ElseIf tag="CustomFieldValue" identifier="layout_header" eq="居宅療養管理指導">
+        　　　　<$mt:Include module="module_header_services_居宅療養管理指導"$>
+        <mt:ElseIf tag="CustomFieldValue" identifier="layout_header" eq="認知症対応型通所介護">
+        　　　　<$mt:Include module="module_header_services_認知症対応型通所介護"$>
+        <mt:ElseIf tag="CustomFieldValue" identifier="layout_header" eq="訪問入浴">
+        　　　　<$mt:Include module="module_header_services_訪問入浴"$>
+        <mt:ElseIf tag="CustomFieldValue" identifier="layout_header" eq="訪問リハビリテーション">
+        　　　　<$mt:Include module="module_header_services_訪問リハビリテーション"$>
+        <mt:ElseIf tag="CustomFieldValue" identifier="layout_header" eq="夜間対応型訪問介護">
+        　　　　<$mt:Include module="module_header_services_夜間対応型訪問介護"$>
+        <mt:ElseIf tag="CustomFieldValue" identifier="layout_header" eq="開業支援">
+        　　　　<$mt:Include module="module_header_services_開業支援"$>
+    　<mt:Else>
+        　　　　<$mt:Include module="module_header"$>
+    　</mt:If>
+
+    　　　　<mt:If tag="CustomFieldValue" identifier="layout_main" eq="トップページ">
+    		<!-- top-page -->
+    　<mt:Else>
+			<!-- breadcrumb -->
+    		<$mt:Include module="module_breadcrumb"$>
+    　</mt:If>
+
+    	<mt:If tag="CustomFieldValue" identifier="layout_main" eq="2カラム">
+            <div class="l-main-two">
+                <!-- .l-main-two -->
+                <main class="">
+                    <$mt:PageBody$>
+                    <$mt:PageMore$>
+                </main>
+                <!-- /.l-main-two -->
+       　  　　　   <$mt:Include module="module_sidenavi"$>
+            </div>
+    　<mt:Else>
+            <!-- .l-main -->
+            <main class="l-main">
+                <$mt:PageBody$>
+                <$mt:PageMore$>
+            </main>
+            <!-- /.l-main -->
+        </mt:If>
+
+        <$mt:Include module="module_footer"$>
+    </body>
+</html>

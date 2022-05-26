@@ -1,0 +1,198 @@
+<$mt:SetVar name="SERVICES" value="home_helper_service"$>
+<header class="l-header">
+    <div class="l-header__inner">
+        <a href="/services/<$mt:GetVar name="SERVICES"$>" class="l-header__logo">
+            <picture>
+                <img
+                    src="/asset/img/logo/logo_<$mt:GetVar name="SERVICES"$>.svg"
+                    alt=""
+                />
+            </picture>
+        </a>
+        <nav class="l-header__cta--pc">
+            <a href="tel:0120-115-611" class="l-header__call"
+                ><span><i class="fa fa-phone"> 0120-115-611</i></span
+                ><br />平日9時〜18時(年末年始・GW休暇は除く)</a
+            >
+            <a
+                href="https://r.kaipoke.biz/kaipokebiz/login/COM020102.do?code=index.html&_ga=2.179605922.747774924.1653269250-872368891.1635838339&_gac=1.150561410.1651125319.EAIaIQobChMI5eXl87e36gIVBjdgCh3NwQMKEAAYASAAEgJWnvD_BwE"
+                class="l-header__button"
+                >ログイン</a
+            >
+            <a
+                href="https://form.kaipoke.biz/forms/biz_031/p01?code=index.html&_ga=2.108122500.747774924.1653269250-872368891.1635838339&_gac=1.262794680.1651125319.EAIaIQobChMI5eXl87e36gIVBjdgCh3NwQMKEAAYASAAEgJWnvD_BwE"
+                class="l-header__button"
+                >新規登録</a
+            >
+        </nav>
+    </div>
+    <input type="checkbox" id="navi-button" />
+    <label class="l-header__label" for="navi-button">
+        <span></span>
+    </label>
+    <nav class="l-gnavi">
+        <ul class="l-gnavi__lists">
+            <li class="l-gnavi__list">
+                <a href="/services/<$mt:GetVar name="SERVICES"$>/function/"
+                    >機能</a
+                >
+            </li>
+            <li class="l-gnavi__list">
+                <a href="/services/<$mt:GetVar name="SERVICES"$>/price/"
+                    >利用料金</a
+                >
+            </li>
+            <li class="l-gnavi__list">
+                <a href="/services/<$mt:GetVar name="SERVICES"$>/voice/"
+                    >利用者様の声</a
+                >
+            </li>
+            <li class="l-gnavi__list">
+                <a href="/opening/">事業所開設の方</a>
+            </li>
+            <li class="l-gnavi__list l-gnavi__list--categorize">
+                <a href="/">カイポケトップ</a>
+            </li>
+            <li class="l-gnavi__list l-gnavi__list--full">
+                <input
+                    name="js-radiocheck"
+                    type="checkbox"
+                    id="menu01"
+                />
+                <label for="menu01">
+                    サービス一覧
+                    <span class="l-gnavi__arrow"
+                        ><i class="fas l-gnavi__icon"></i
+                    ></span>
+                </label>
+                <div class="l-gnavi__content">
+                    <h3><a href="/">カイポケトップ</a></h3>
+                    <h3><a href="/services/">すべてのサービス</a></h3>
+                    <ul class="l-gnavi__categorylists">
+                        <li>
+                            <h4>居宅介護支援向け</h4>
+                            <ul>
+                                <li>
+                                    <a
+                                        href="/services/home_helper_service/"
+                                        >居宅介護支援</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>通所サービス向け</h4>
+                            <ul>
+                                <li>
+                                    <a href="/services/day_service/"
+                                        >通所介護</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/services/day_care/"
+                                        >通所リハビリテーション</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/services/after_school_day_service/"
+                                        >児発・放デイ</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/services/dementia_day_service/"
+                                        >認知症対応型通所介護</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>訪問サービス向け</h4>
+                            <ul>
+                                <li>
+                                    <a href="/services/home_visit/"
+                                        >訪問介護</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/services/visiting_care/"
+                                        >訪問看護</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/services/home_medical_care_management/"
+                                        >居宅療養管理指導</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/services/visit_rehabilitation/"
+                                        >訪問リハビリテーション</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="/services/visit_bathing/"
+                                        >訪問入浴</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/services/night_home_visit/"
+                                        >夜間対応型訪問介護</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>その他居宅介護サービス向け</h4>
+                            <ul>
+                                <li>
+                                    <a
+                                        href="/services/welfare_equipment_rental/"
+                                        >福祉用具貸与</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/services/welfare_equipment_sales/"
+                                        >福祉用具販売</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>住まい向け</h4>
+                            <ul>
+                                <li>
+                                    <a
+                                        href="/services/elderly_housing_care/"
+                                        >サ高住・有料老人ホーム</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>
+                        <a href="/services/opening/"
+                            >新しく事業所を開設される方へ</a
+                        >
+                    </h3>
+                </div>
+            </li>
+            <li class="l-header__cta--sp">
+                <a
+                    href="https://r.kaipoke.biz/kaipokebiz/login/COM020102.do?code=index.html&_ga=2.179605922.747774924.1653269250-872368891.1635838339&_gac=1.150561410.1651125319.EAIaIQobChMI5eXl87e36gIVBjdgCh3NwQMKEAAYASAAEgJWnvD_BwE"
+                    class="l-header__button"
+                    >ログイン</a
+                >
+                <a
+                    href="https://form.kaipoke.biz/forms/biz_031/p01?code=index.html&_ga=2.108122500.747774924.1653269250-872368891.1635838339&_gac=1.262794680.1651125319.EAIaIQobChMI5eXl87e36gIVBjdgCh3NwQMKEAAYASAAEgJWnvD_BwE"
+                    class="l-header__button"
+                    >新規登録</a
+                >
+            </li>
+        </ul>
+    </nav>
+</header>

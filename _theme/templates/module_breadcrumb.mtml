@@ -1,0 +1,47 @@
+<mt:if tag="PageBaseName" eq="index">
+<$mt:SetVar name="exclude_current" value="1"$>
+<mt:else>
+<$mt:SetVar name="exclude_current" value="0"$>
+</mt:if>
+ <ol 
+      class="l-breadcrumb"  
+      itemscope
+    　　itemtype="https://schema.org/BreadcrumbList"
+   >
+    <li  
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+     >
+      <a  itemprop="item" href="/">
+        <span property="name">カイポケトップ</span>
+      </a>
+     <mt:SetVar name="index_value" value="1">    
+      <meta property="position" content="<$mt:GetVar name="index_value" $>">
+    </li>
+  
+    <mt:ParentFolders exclude_current="$exclude_current">
+    <mt:SetVar name="index_value" op="++">
+    <li  
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+     >
+      <a itemprop="item" href="/<$mt:FolderPath$>/">
+        <span property="name"><$mt:FolderLabel></span>
+      </a>
+      <meta property="position" content="<$mt:GetVar name="index_value" $>">
+    </li>
+    </mt:ParentFolders>  
+    <li  
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+     >
+      <span property="name">
+        <$mt:PageTitle$>
+      </span>
+      <mt:SetVar name="index_value" op="++">    
+      <meta property="position" content="<$mt:GetVar name="index_value" $> ">
+    </li>
+</ol>

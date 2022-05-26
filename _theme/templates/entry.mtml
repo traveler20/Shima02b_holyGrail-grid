@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <$mt:Include module="module_head"$>
+    </head>
+    <body>
+        <$mt:Include module="module_header"$>
+
+    <!-- breadcrumb -->
+       <$mt:Include module="module_breadcrumb"$>
+
+    　　　　<mt:If tag="CustomFieldValue" identifier="layout_main" eq="2カラム">
+            <mt:includeblock module="layout_main_column2" ver="PageBody">
+                <!-- .l-main-two -->
+                <$mt:PageBody$>
+                <$mt:PageMore$>
+                <!-- /.l-main-two -->
+            </mt:includeblock>
+    　<mt:Else>
+            <!-- .l-main -->
+            <main class="l-main">
+                <article style="width:900px;margin:0 auto;">
+                <$mt:PageBody$>
+                <$mt:PageMore$>
+            	</article>
+            </main>
+            <!-- /.l-main -->
+        </mt:If>
+
+        <$mt:Include module="module_footer"$>
+    </body>
+</html>

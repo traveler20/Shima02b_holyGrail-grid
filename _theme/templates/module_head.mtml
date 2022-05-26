@@ -1,0 +1,62 @@
+<!-- meta -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- ogp -->
+<meta property="og:type" content="website" />
+<mt:If tag="CustomFieldValue" identifier="layout_main" eq="トップページ">
+  <title><$mt:BlogName$>｜新規導入数No.1</title>
+  <meta
+      property="og:title"
+      content="<$mt:BlogName$>｜新規導入数No.1"
+  />
+<mt:else>
+  <title><$mt:PageTitle$>｜<$mt:BlogName$></title>
+  <meta
+      property="og:title"
+      content="<$mt:PageTitle$>｜<$mt:BlogName$>"
+  />
+</mt:if>
+<meta
+      name="description"
+      content='<$mt:CustomFieldValue identifier="meta_description"$>'
+      />
+<meta
+      property="og:description"
+      content='<$mt:CustomFieldValue identifier="meta_description"$>'
+      />
+<meta property="og:locale" content="ja_JP" />
+<meta name="twitter:card" content="summary_large_image" />
+<link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.kaipoke.biz/assets/img/favicon.ico"
+      />
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script src="https://ads.kaipoke.biz/javascripts/slidemenu.js?2022-05-02T09:53:12+09:00"></script>
+<script src="https://ads.kaipoke.biz/javascripts/accordion.js?2022-05-02T09:53:12+09:00"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fixed-sticky/0.1.7/fixedsticky.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.0.1/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
+<link
+      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
+      rel="stylesheet"
+      />
+<link
+      href="https://ads.kaipoke.biz/stylesheets/application.css?2022-05-02T09:53:12+09:00"
+      rel="stylesheet"
+      />
+<!-- css -->
+<link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      crossorigin="anonymous"
+      />
+<link rel="stylesheet" href="<$mt:BlogURL$>asset/css/style.css" />
+<style>
+.l-main > .horizontal-container__item{
+    float: none;
+    max-width: 900px;
+    margin: 0 auto;
+}
+</style>

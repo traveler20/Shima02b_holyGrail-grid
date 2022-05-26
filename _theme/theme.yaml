@@ -1,0 +1,240 @@
+id: "test-ads-theme"
+label: "test-ads-theme"
+version: "1.0.1"
+author_link: "https://tra.movabletype.io/"
+author_name: "介護ソフト・介護システムはカイポケ"
+description: "test-ads-theme"
+class: "blog"
+elements:
+  block_display_options:
+    component: ~
+    data:
+      page:
+        core-columns:
+          order: 8
+          panel: 1
+          shortcut: 0
+        core-horizontalrule:
+          order: 5
+          panel: 1
+          shortcut: 0
+        core-html:
+          order: 3
+          panel: 1
+          shortcut: 0
+        core-table:
+          order: 6
+          panel: 1
+          shortcut: 0
+        core-text:
+          order: 0
+          panel: 1
+          shortcut: 1
+        custom-left_image:
+          order: 12
+          panel: 1
+          shortcut: 0
+        custom-right_image:
+          order: 11
+          panel: 1
+          shortcut: 0
+        custom-table:
+          order: 7
+          panel: 1
+          shortcut: 0
+        custom-three_column:
+          order: 10
+          panel: 1
+          shortcut: 0
+        custom-two_column:
+          order: 9
+          panel: 1
+          shortcut: 0
+        mt-file:
+          order: 2
+          panel: 1
+          shortcut: 1
+        mt-image:
+          order: 1
+          panel: 1
+          shortcut: 1
+        sixapart-oembed:
+          order: 4
+          panel: 1
+          shortcut: 0
+      post:
+        core-columns:
+          order: 8
+          panel: 1
+          shortcut: 0
+        core-horizontalrule:
+          order: 5
+          panel: 1
+          shortcut: 0
+        core-html:
+          order: 3
+          panel: 1
+          shortcut: 0
+        core-table:
+          order: 6
+          panel: 1
+          shortcut: 0
+        core-text:
+          order: 0
+          panel: 1
+          shortcut: 1
+        custom-left_image:
+          order: 12
+          panel: 1
+          shortcut: 0
+        custom-right_image:
+          order: 11
+          panel: 1
+          shortcut: 0
+        custom-table:
+          order: 7
+          panel: 1
+          shortcut: 0
+        custom-three_column:
+          order: 10
+          panel: 1
+          shortcut: 0
+        custom-two_column:
+          order: 9
+          panel: 1
+          shortcut: 0
+        mt-file:
+          order: 2
+          panel: 1
+          shortcut: 1
+        mt-image:
+          order: 1
+          panel: 1
+          shortcut: 1
+        sixapart-oembed:
+          order: 4
+          panel: 1
+          shortcut: 0
+    importer: block_display_options
+  blog_static_files:
+    component: ~
+    data:
+      - asset
+    importer: blog_static_files
+  custom_fields:
+    component: commercial
+    data:
+      layout_header:
+        default: ノーマル
+        description: ヘッダーの種類を選択。（ノーマル／各サービス種別のヘッダー）
+        name: layout_header
+        obj_type: page
+        options: ノーマル,居宅介護支援,通所介護,通所リハ,訪問介護,訪問看護,児発・放デイ,サ高住・有料老人ホーム,福祉用具貸与,福祉用具販売,居宅療養管理指導,認知症対応型通所介護,訪問入浴,訪問リハ,夜間対応型訪問介護,開業支援,
+        required: 1
+        type: select
+      layout_main:
+        default: 1カラム
+        description: メインコンテンツ部分の選択。（1カラム／2カラム／トップページ）
+        name: layout_main
+        obj_type: page
+        options: 1カラム,2カラム,トップページ
+        required: 1
+        type: select
+      meta_description:
+        default: 介護ソフト カイポケは、国保連伝送請求などの請求機能と、採用や営業の支援をする経営支援サポートが合さった新しいサービスです。導入実績は現在約31,100事業所。東証プライム上場企業が運営しています。ぜひ無料体験してみてください。
+        description: ページの説明文を入れる。
+        name: meta_description
+        obj_type: page
+        options: ''
+        required: 0
+        type: text
+    importer: custom_fields
+  field_display_options:
+    component: ~
+    data:
+      page:
+        excerpt:
+          display: default
+          order: 2
+        keywords:
+          display: default
+          order: 1
+        text:
+          display: default
+          order: 0
+      post:
+        excerpt:
+          display: default
+          order: 2
+        keywords:
+          display: default
+          order: 1
+        text:
+          display: default
+          order: 0
+    importer: field_display_options
+  template_set:
+    component: core
+    data:
+      base_path: templates
+      templates:
+        index:
+          article_index_html:
+            filename: article/index.html.mtml
+            label: お役立ち情報
+            outfile: article/index.html
+            rebuild_me: 1
+          main_index:
+            filename: test.html.mtml
+            label: メインページ
+            outfile: test.html
+            rebuild_me: 1
+        individual:
+          entry:
+            filename: entry.mtml
+            label: 記事ページテンプレート
+            mappings:
+              individual:
+                archive_type: Individual
+                file_template: "%-c/%-f"
+                preferred: 1
+        module:
+          module_body:
+            filename: module_body.mtml
+            label: module_body
+          module_breadcrumb:
+            filename: module_breadcrumb.mtml
+            label: module_breadcrumb
+          module_footer:
+            filename: module_footer.mtml
+            label: module_footer
+          module_head:
+            filename: module_head.mtml
+            label: module_head
+          module_header:
+            filename: module_header.mtml
+            label: module_header
+          module_header_services:
+            filename: module_header_services.mtml
+            label: module_header_services
+          module_header_services_:
+            filename: module_header_services_.mtml
+            label: module_header_services_居宅介護支援
+          module_header_services__1:
+            filename: module_header_services__1.mtml
+            label: module_header_services_通所介護
+        page:
+          page:
+            filename: page.mtml
+            label: ウェブページテンプレート
+            mappings:
+              page:
+                archive_type: Page
+                file_template: "%_c/%f"
+                preferred: 1
+        system:
+          404_error:
+            filename: 404_error.mtml
+            label: 404 エラー
+    importer: template_set
+
